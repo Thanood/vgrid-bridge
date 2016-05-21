@@ -5,13 +5,13 @@
  *    Created by vegar ringdal
  *
  ****************************************************************************************************************/
-//import {inject, customAttribute, Optional} from 'aurelia-framework';
+
 import {customAttribute} from 'aurelia-templating';
 import {inject, Optional} from 'aurelia-dependency-injection';
 import {VGrid} from './v-grid';
 
 
-var VGridAttibutes = class {
+export class VGridAttibutes {
 
   constructor(element, vGrid) {
     this.vGrid = vGrid;
@@ -28,19 +28,19 @@ var VGridAttibutes = class {
 
 
   setValue(htmlAttributeValue, defaultValue) {
-    var value = defaultValue;
+    let value = defaultValue;
     if (htmlAttributeValue !== undefined && htmlAttributeValue !== null && !isNaN(htmlAttributeValue)) {
       value = htmlAttributeValue;
     }
     return value;
-  };
+  }
 
 
   setBindValueInt() {
     if (this.vGrid.vGridContextObj[this.alias]) {
       this.vGrid.vGridConfig[this.attribute] = this.setValue(this.vGrid.vGridContextObj[this.alias], this.attDefault);
     } else {
-      this.vGrid.vGridConfig[this.attribute] = this.setValue(parseInt(this.value), this.attDefault);
+      this.vGrid.vGridConfig[this.attribute] = this.setValue(parseInt(this.value, 10), this.attDefault);
     }
   }
 

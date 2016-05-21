@@ -1,4 +1,3 @@
-//import {ViewSlot} from 'aurelia-framework';
 import {ViewSlot} from 'aurelia-templating';
 
 /*****************************************************************************************************************
