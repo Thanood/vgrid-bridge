@@ -7,6 +7,7 @@ export class ConfigBuilder {
 
   useAll() : ConfigBuilder {
     this.globalResources = this.globalResources.concat([
+      // './vGrid/v-grid-atts',
       './vGrid/v-grid-contextmenu',
       './vGrid/v-grid-row-repeat',
       './vGrid/v-grid-header-cells-label',
@@ -20,8 +21,7 @@ export class ConfigBuilder {
       './vGrid/v-grid-col',
       './vGrid/v-grid-header-col',
       './vGrid/v-grid-row-col',
-      './vGrid/v-grid',
-      './vGrid/v-grid-atts'
+      './vGrid/v-grid'
     ]);
     return this;
   }
