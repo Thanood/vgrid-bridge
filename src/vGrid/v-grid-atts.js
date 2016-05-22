@@ -11,7 +11,7 @@ import {inject, Optional} from 'aurelia-dependency-injection';
 import {VGrid} from './v-grid';
 
 
-export class VGridAttibutes {
+var VGridAttibutes = class {
 
   constructor(element, vGrid) {
     this.vGrid = vGrid;

@@ -1,0 +1,15 @@
+<template>
+  <v-grid
+   style="position:relative;width:500px;height:500px"
+   v-row-height="40"
+   v-header-height="50"
+   v-current-entity.bind=myCurrentEntity
+   v-collection.bind=myCollection
+   v-grid-context.bind=myGrid>
+   <v-grid-col v-col-width="100" v-col-attribute="name" v-col-header="Name"></v-grid-col>
+   <v-grid-col v-col-width="100" v-col-attribute="age" v-col-header="Age"></v-grid-col>
+</v-grid>
+
+<input disabled.bind="!myCurrentEntity.__vGridKey" value.bind="myCurrentEntity.name">
+<input disabled.bind="!myCurrentEntity.__vGridKey" value.bind="myCurrentEntity.age">
+</template>

@@ -7,7 +7,7 @@ export class ConfigBuilder {
 
   useAll() : ConfigBuilder {
     this.globalResources = this.globalResources.concat([
-      // './vGrid/v-grid-atts',
+      './vGrid/v-grid-atts',
       './vGrid/v-grid-contextmenu',
       './vGrid/v-grid-row-repeat',
       './vGrid/v-grid-header-cells-label',

@@ -5,6 +5,7 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging()
     .plugin('skeleton-bridge', plugin => plugin.useAll());
+    // .plugin('skeleton-bridge');
 
   aurelia.use.globalResources('shared/collapse-panel');
   aurelia.use.globalResources('shared/markdown');

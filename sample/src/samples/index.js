@@ -22,7 +22,7 @@ export class Index {
     //   { name: 'collapse', route: 'collapse', moduleId: './collapse/index', title: 'Collapse' },
     //   { name: 'panel', route: 'panel', moduleId: './panel/index', title: 'Panel' }
     // ]);
-    this.routerConfig.unshift({ name: 'default', route: '', redirect: 'click-counter' });
+    this.routerConfig.unshift({ name: 'default', route: '', redirect: 'basic-grid' });
     config.map(this.routerConfig);
     this.router = router;
   }
